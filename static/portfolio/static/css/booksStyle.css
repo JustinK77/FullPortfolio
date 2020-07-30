@@ -1,0 +1,153 @@
+body{
+    background-color: rgb(133, 152, 255);
+}
+
+.listHeader{
+    position: relative; 
+    left: 720px; 
+    bottom: 550px;
+    color: blue;
+    font-family: 'Crimson Text', serif;
+    font-size: 40;
+
+}
+
+#viewerCanvas{
+    width: 700px;
+    height: 500px;
+}
+
+#searchResults{
+    position:relative; 
+    left:700px; 
+    bottom:625px;
+    list-style: none;
+}
+
+#searchBox{
+    position:relative;
+    left:720px;
+    bottom:600px;
+    width: 500px;
+}
+
+#booksList{
+    position:relative;
+    left:740px;
+    bottom:600px;
+    font-family:'Crimson Text', serif;
+    color: blue;
+    font-size: 20;
+}
+
+#searchButton{
+    cursor: pointer;
+}
+
+
+.buttons{
+    background-color: #c0d6fa;
+    padding : 10px 12px;
+    font-family: 'Crimson Text', 'serif';
+    font-size: 18;
+    cursor: pointer;
+    border: 5px solid rgb(109, 109, 252);
+    border-radius: 15px;
+    color: blue;
+}
+
+.addButtons{
+    position: relative;
+    bottom: 145px;
+    left: 8px;
+    border: 5px solid rgb(109, 109, 252);
+    background-color: #c0d6fa;
+    padding : 10px 12px;
+    font-family: 'Crimson Text', 'serif';
+    font-size: 18;
+    cursor: pointer;
+    border-radius: 15px;
+    color: blue;
+}
+
+.buttons:hover{
+    background-color: #79a9f7;
+}
+
+.addButtons:hover{
+    background-color: #79a9f7;
+}
+
+.thumbnail{
+    border: 3px solid #000000;
+    display: inline-flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 189px;
+    position: relative;
+    bottom: 125px;
+    width: 128px;
+}
+
+.titleText{
+    font-family: 'Crimson Text', serif;
+    font-size: 24;
+    font-weight: 200;
+    position: relative;
+    left: 150px;
+    top: 25px;
+    color: blue;
+}
+
+.authorText{
+    font-family: 'Crimson Text', serif;
+    font-size: 20;
+    font-weight: 150;
+    position: relative;
+    left: 150px;
+    bottom: 25px;
+    color: rgb(67, 67, 255);
+
+}
+
+.searchelement{
+    position: relative;
+    right: 23px;
+    height: 220px;
+
+}
+
+.decLine{
+    width: 40%;
+    position: relative;
+    right: 439px;
+    bottom: 140px;
+    border: 0;
+    height: 0.5%;
+    background-image: linear-gradient(to right, rgb(97, 107, 248), rgb(50, 30, 228), rgb(97, 107, 248));
+}
+
+.decLine2{
+    width: 40%;
+    position: relative;
+    bottom: 500px;
+    left: 265px;
+    right: 439px;
+    border: 0;
+    height: 0.5%;
+    background-image: linear-gradient(to right, rgb(97, 107, 248), rgb(50, 30, 228), rgb(97, 107, 248));
+}
+
+.listHeader2{
+    position: relative; 
+    left: 720px; 
+    bottom: 550px;
+    color: blue;
+    font-family: 'Crimson Text', serif;
+    font-size: 40;
+}
+
+.bookInListText{
+    width: 650px;
+}
+

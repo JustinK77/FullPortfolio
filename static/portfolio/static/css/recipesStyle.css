@@ -1,0 +1,111 @@
+.recipeImage{
+    width: 200px;
+    height: 200px;
+}
+
+.pot{
+    width:400px;
+    height:260px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    background-color: rgb(203, 255, 230);
+}
+
+.heading1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(117, 117, 117);
+    font-size: 60pt;
+    text-align: center;
+    position: relative;
+    bottom: 220px;
+    right: 250px;
+}
+.heading2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(117, 117, 117);
+    font-size: 60pt;
+    text-align: center;
+    position: relative;
+    bottom: 390px;
+    left: 790px;
+    width: 500px;
+
+}
+
+.recipeForm{
+    position: relative;
+    bottom: 425px;
+    text-align: center;
+}
+
+.selector{
+    padding: 6px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(78, 78, 78);
+}
+
+.submitButton{
+    padding: 6px;
+    width: 100px;
+    height: 45px;
+    border-radius: 8px;
+    background-color: rgb(233, 233, 233);
+    border-color: rgb(118, 255, 171);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12pt;
+}
+
+.recipesHeader{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(117, 117, 117);
+    font-size: 45pt;
+    position: relative;
+    bottom: 400px;
+}
+
+.mainLine{
+    border: 0;
+    position: relative;
+    bottom: 450px;
+    width: 30%;
+    height: 8px;
+    background-image: linear-gradient(to bottom, rgb(179, 179, 179), rgb(203, 255, 230));
+}
+
+.recipeList{
+    position: relative;
+    bottom: 400px;
+    right: 22px;
+    list-style-position: inside;
+    text-align: center;
+    list-style: none;
+
+}
+
+.recipeListElement{
+    padding: 15px;
+}
+
+.listLine{
+    width: 35%;
+}
+
+.dishName{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18pt;
+    color: grey;
+}
+
+.noRecipes{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18pt;
+    color: grey;
+    text-align: center;
+    position: relative;
+    bottom: 445px;
+}
