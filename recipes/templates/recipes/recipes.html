@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <link href="{% static 'css/recipesStyle.css' %}?9993442" rel="stylesheet" />
+    <script type="text/javascript" src="{% static 'js/recipesScripts.js' %}?9322234"></script>
+    <!-- <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script> -->
+
+</head>
+
+<body>
+    <img class="pot" src="{% static 'assets/img/recipes/pot.jpg' %}?13434423" alt="" />
+    <p class="heading1">Recipe</p>
+    <p class="heading2">Selector</p>
+        
+        <br>
+        <br>
+        <form action="/portfolio/recipes/makeSearch/" method="GET" class="recipeForm">
+            <div class="selector">
+            <label for="Meal">Choose Meal Type: </label>
+            <select name="mealType" id="mealType">
+                <option value="noPref">No Preference</option>
+                <option value="breakfast">Breakfast</option>
+                <option value="lunchdinner">Lunch/Dinner</option>
+                <option value="snack">Snack</option>
+            </select>
+            </div>
+            <br>
+            <div class="selector">
+            <label for="Meal">Choose Nutrition Type: </label>
+            <select name="nutrition" id="nutrition">
+                <option value="noPref">No Preference</option>
+                <option value="rounded">Well-Rounded</option>
+                <option value="protein">High Protein</option>
+                <option value="carbs">High Carb/Fat</option>
+            </select>
+            </div>
+            <br>
+            <div class="selector">
+            <label for="Meal">Choose Cooking Difficulty: </label>
+            <select name="difficulty" id="difficulty">
+                <option value="noPref">No Preference</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            </div>
+            <br>
+            <div class="selector">
+            <label for="Meal">Choose Cuisine: </label>
+            <select name="cuisine" id="cuisine">
+                <option value="noPref">No Preference</option>
+                <option value="american">American</option>
+                <option value="english">English</option>
+                <option value="mexican">Mexican</option>
+                <option value="italian">Italian</option>
+                <option value="asian">Asian</option>
+            </select>
+            </div>
+            <br>
+            <input type="submit" value="Search" class="submitButton"/>
+        </form>
+        <p class="recipesHeader">
+            Recipes:
+        </p>
+        <hr class="mainLine"> 
+        <br>
+        {% if recipeList %}
+        <ul class="recipeList">
+            {% for x in recipeList %} 
+            <li class="recipeListElement">
+                <p class="dishName"><a href="{{x.recipeLink}}">{{x}}</a></p> 
+                <br>
+                <img class="recipeImage" src="{{x.imageLink}}">
+            </li>
+            <hr class="listLine">
+            {% endfor %}
+        </ul>
+            
+        {% elif mainPage %}
+        {% else %}
+            <p class="noRecipes">Sorry, no recipes match this input.</p>
+        {% endif %}
+        <br>
+        <a href="https://github.com/JustinK77/RecipeSelector" style="font-size: 16pt; position: relative; bottom: 250px;">Link to Source Code</a>
+
+
+</body>
