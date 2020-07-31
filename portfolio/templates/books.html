@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <link href="{% static 'css/booksStyle.css' %}?16955234" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Google Books API Project - Justin Klopfer</title>
+    <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
+    <script type="text/javascript">
+      
+    </script>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/booksScripts.js' %}?9333234"></script>
+
+    <div id="viewerCanvas"></div>
+    <div class="listHeader">
+        <h1>List of Books</h1>
+    </div>
+    <ul id="booksList">
+           
+    </ul>
+    <hr class="decLine2">
+    <div class="listHeader2">
+      <h2> Make Search</h2>
+    </div>
+    
+    
+    <div id="searchBox">
+      <input type="text" id="myInput" placeholder="Title/Author...">
+      <button id="searchButton" onclick="takeInput()">Search</button>
+    </div>
+    <ul id="searchResults">
+
+    </ul>
+  </body>
+</html>
